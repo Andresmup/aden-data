@@ -1,0 +1,101 @@
+payment_date,amount,method,status_payment,payment_installment,invoice_id
+2024-07-08,873,tarjeta debito,pendiente,1,22
+2024-02-14,397,transferencia bancaria,pagado,10,92
+2022-10-15,598,tarjeta debito,pendiente,11,59
+2022-04-16,931,paypal,pendiente,7,9
+2022-01-27,992,efectivo,fallido,3,36
+2022-01-15,809,mercado pago,pendiente,11,59
+2023-04-06,974,transferencia bancaria,pagado,11,66
+2023-03-04,520,cheque,pagado,9,34
+2023-07-29,246,transferencia bancaria,pagado,10,30
+2022-01-16,707,efectivo,pagado,9,47
+2024-04-29,432,paypal,pendiente,3,78
+2022-06-07,407,transferencia bancaria,pagado,8,37
+2022-08-18,328,transferencia bancaria,pendiente,7,73
+2023-01-22,780,efectivo,fallido,4,67
+2023-05-22,201,transferencia bancaria,pendiente,12,80
+2023-06-14,734,paypal,pendiente,3,25
+2022-01-08,410,cheque,fallido,9,22
+2023-07-25,997,mercado pago,fallido,9,58
+2023-12-26,412,tarjeta credito,pendiente,2,54
+2023-07-19,611,paypal,pendiente,8,7
+2022-06-01,741,mercado pago,fallido,12,54
+2024-02-09,678,paypal,pendiente,5,27
+2022-04-16,195,efectivo,pendiente,5,100
+2022-01-10,133,efectivo,pagado,8,100
+2022-03-07,749,paypal,fallido,11,92
+2023-12-12,398,mercado pago,pendiente,10,45
+2022-06-29,154,efectivo,pendiente,8,57
+2022-08-12,933,efectivo,fallido,6,99
+2024-05-23,419,transferencia bancaria,pagado,9,11
+2024-08-22,79,cheque,pendiente,5,12
+2022-09-07,779,tarjeta credito,pendiente,5,38
+2024-07-05,972,tarjeta credito,pagado,11,85
+2023-02-02,228,efectivo,fallido,7,25
+2022-02-07,546,cheque,fallido,5,76
+2024-02-28,833,transferencia bancaria,pendiente,10,88
+2022-07-26,762,transferencia bancaria,pendiente,4,81
+2022-12-11,187,tarjeta debito,fallido,7,99
+2022-09-12,625,paypal,fallido,2,15
+2024-06-24,913,cheque,fallido,1,57
+2023-07-31,136,efectivo,pendiente,3,40
+2022-08-13,521,tarjeta debito,pagado,9,36
+2023-05-06,770,cheque,fallido,12,35
+2023-09-20,560,paypal,pagado,8,86
+2024-04-27,734,transferencia bancaria,fallido,6,96
+2023-01-01,237,paypal,pendiente,8,94
+2022-04-28,871,paypal,pendiente,7,99
+2024-05-03,747,paypal,fallido,5,16
+2023-05-29,756,tarjeta credito,pendiente,11,18
+2024-02-07,965,paypal,pagado,10,60
+2023-02-11,152,paypal,pagado,6,100
+2024-03-06,33,transferencia bancaria,pagado,8,33
+2023-04-02,96,transferencia bancaria,fallido,11,61
+2022-07-22,717,cheque,pagado,6,4
+2022-02-08,968,tarjeta credito,pendiente,5,99
+2022-05-10,457,tarjeta debito,pagado,3,95
+2023-06-19,355,cheque,fallido,1,65
+2023-01-28,705,cheque,pendiente,8,3
+2023-04-11,746,mercado pago,pagado,1,14
+2023-04-14,358,efectivo,fallido,11,29
+2022-12-09,170,mercado pago,pagado,1,16
+2022-07-14,179,cheque,fallido,2,4
+2023-09-12,19,mercado pago,pagado,4,55
+2023-09-26,751,paypal,pendiente,6,19
+2022-08-21,42,paypal,pagado,7,91
+2024-01-01,989,transferencia bancaria,fallido,2,79
+2024-02-25,586,cheque,fallido,9,49
+2024-06-12,964,cheque,pagado,2,88
+2024-03-02,699,tarjeta debito,pagado,12,75
+2022-05-14,639,tarjeta debito,pagado,1,44
+2023-01-05,123,tarjeta debito,fallido,10,64
+2022-08-13,671,tarjeta debito,fallido,8,99
+2024-06-24,733,tarjeta debito,pendiente,1,35
+2023-02-01,365,tarjeta credito,pagado,2,89
+2022-04-24,340,cheque,fallido,8,62
+2022-01-10,488,transferencia bancaria,pagado,4,66
+2022-09-16,967,transferencia bancaria,fallido,12,68
+2023-01-18,983,mercado pago,pagado,8,59
+2022-12-28,703,paypal,pagado,8,72
+2022-07-20,641,cheque,pendiente,10,59
+2022-10-27,716,efectivo,pendiente,10,62
+2023-05-13,691,cheque,pagado,6,40
+2022-01-25,125,transferencia bancaria,pagado,6,46
+2023-06-14,272,mercado pago,fallido,3,73
+2023-07-13,929,transferencia bancaria,pendiente,4,93
+2023-09-02,839,paypal,pagado,4,58
+2022-02-16,807,tarjeta credito,fallido,5,26
+2024-05-07,426,tarjeta debito,pagado,6,77
+2023-12-02,781,cheque,pagado,3,65
+2024-06-08,857,tarjeta credito,fallido,4,25
+2024-04-08,123,efectivo,fallido,4,45
+2023-09-03,39,cheque,pendiente,2,96
+2022-03-31,651,tarjeta credito,fallido,9,18
+2023-03-17,763,cheque,pendiente,10,30
+2024-03-29,339,mercado pago,pagado,6,95
+2022-11-03,74,transferencia bancaria,pagado,11,59
+2023-02-06,604,cheque,fallido,5,65
+2022-10-09,192,transferencia bancaria,fallido,3,57
+2022-08-02,818,efectivo,pagado,9,58
+2023-01-03,66,cheque,pagado,10,72
+2022-12-13,989,paypal,pagado,9,44
