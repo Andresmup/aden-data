@@ -1,6 +1,6 @@
 # PROVEER DATOS PARA ANÁLISIS Y BI DESDE SISTEMA DE GESTIÓN DE VENTAS
 
-![SCHEMA](images/adea-light.png)
+![SCHEMA](images/aden-light.png)
 
 ## ABSTRACTO
 
