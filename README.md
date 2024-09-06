@@ -31,6 +31,20 @@ De esta forma cada vez que se accedan a los datos a través de la vista material
 - **Cron job:** Las vistas materializadas tienen la ventaja de su rapidez para retribuir datos, la desventaja es que dichos datos no tienen porqué estar actualizados. Ya que estas guardan una captura física de la información al ser creadas.
 Para actualizar dicha información es necesario refrescar la consulta, es decir, volver a ejecutar la query asociada. Este proceso puede hacerse de forma manual o mediante la utilización de cron job. Los cuales ejecutarán el comando de refresh para el periodo establecido.
 
+### Virtudes
+
+A continuación se mencionan ventajas de esta opción:
+- Costos reducidos, esta solución no requiere nueva infraestructura ni realizar inversiones.
+- Despliegue inmediato ya que el tiempo requerido para configurar y preparar la base de datos es mínimo.
+- No es necesario adquirir nuevos conocimientos, ni contratar personal especializado. La configuración de las vistas materializadas puede ser realizada por el DBA actual.
+
+### Desventajas
+
+A continuación se citan algunos aspectos a tener en cuenta:
+- Difícil integración, ya que la posibilidad de incluir datos de otras fuentes puede suponer un trabajo complejo.
+- El trabajar con una base de datos puede suponer una escalabilidad limitada.
+- Uso de arquitectura OLTP para analitica. Las bases de datos por su naturaleza están diseñadas para procesar rápidas y cortas transacciones en vez de largas y complejas consultas.
+
 ### Demo
 
 En este caso se decidió deplegar una base de datos en la nube de AWS utilizando el servicio RDS, simulando la posible base de datos utilizada por el sistema de gestión de ventas.
@@ -48,21 +62,7 @@ Tal como se explica en las [instrucciones](postgres-rds-db/Readme.md) los pasos 
 - Insertar los datos en las tablas, importando desde los archivos `.csv` usando el [script_data](db-files/data.sql).
 - Crear vistas materializadas de las tablas usando [script_mv](db-files/mv.sql).
 - Ejecutar [script_bi_user](db-files/bi_user.sql), creando un usuario postgres con acceso de solo lectura a las vistas materializadas.
-- Definir y agendar los cron job para la actualización de las vistas materializadas ejecutando [script_cron_jo](postgres-rds-db/cron_job.sql).
-
-### Virtudes
-
-A continuación se mencionan ventajas de esta opción:
-- Costos reducidos, esta solución no requiere nueva infraestructura ni realizar inversiones.
-- Despliegue inmediato ya que el tiempo requerido para configurar y preparar la base de datos es mínimo.
-- No es necesario adquirir nuevos conocimientos, ni contratar personal especializado. La configuración de las vistas materializadas puede ser realizada por el DBA actual.
-
-### Desventajas
-
-A continuación se citan algunos aspectos a tener en cuenta:
-- Difícil integración, ya que la posibilidad de incluir datos de otras fuentes puede suponer un trabajo complejo.
-- El trabajar con una base de datos puede suponer una escalabilidad limitada.
-- Uso de arquitectura OLTP para analitica. Las bases de datos por su naturaleza están diseñadas para procesar rápidas y cortas transacciones en vez de largas y complejas consultas.
+- Definir y agendar los cron job para la actualización de las vistas materializadas ejecutando [script_cron_job](postgres-rds-db/cron_job.sql).
 
 ## OPCIÓN 2: Desarrollar e implementar un datawehouse
 
@@ -100,4 +100,4 @@ La decisión de optar por alguna de las dos deberá ser evaluada en base a proye
 
 Se definieron algunas [queries](db-files/queries.sql) de ejemplo para retribuir ciertos datos relevantes de la base de datos.
 
-Además como se diseñó un tablero simple en Looker Studio, el cual tiene como fuente de datos las vistas materializadas de la base de datos RDS Postgres desplegada, dicho dashboard se puede acceder [aquí](https://lookerstudio.google.com/reporting/fb733aa8-9e56-44a0-b21c-945d7d54a75d).
+Además se diseñó un tablero simple en Looker Studio, el cual tiene como fuente de datos las vistas materializadas de la base de datos RDS Postgres desplegada, dicho dashboard se puede acceder [aquí](https://lookerstudio.google.com/reporting/fb733aa8-9e56-44a0-b21c-945d7d54a75d).
