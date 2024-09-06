@@ -1,7 +1,7 @@
 variable "app_name" {
   type        = string
   description = "Application Name"
-  default     = "adea"
+  default     = "aden"
 }
 
 variable "app_environment" {
